@@ -1,4 +1,5 @@
-var $ = require('jquery');
+global.jQuery = require('jquery');
+var $ = global.jQuery;
 require('jquery.easing');
 
 function displayQuote() {

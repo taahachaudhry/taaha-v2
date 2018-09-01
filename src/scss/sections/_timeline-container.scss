@@ -23,7 +23,7 @@
 
       &::before {
         top: 0.5em;
-        left: -1.54em;
+        left: -1.59em;
       }
     }
 
@@ -43,10 +43,10 @@
     &::before {
       position: absolute;
       top: 0.5em;
-      left: -1.4em;
+      left: -1.41em;
       z-index: 6;
-      width: 0.65em;
-      height: 0.65em;
+      width: 0.7em;
+      height: 0.7em;
       background: $site-blue;
       border-radius: 50%;
       content: '';
@@ -64,5 +64,11 @@
   a {
     color: $link-blue;
     text-decoration: underline;
+  }
+}
+
+@media(max-width: 767px) {
+  .timeline-container {
+    padding: 2em 5em;
   }
 }
