@@ -1,0 +1,21 @@
+.footer {
+  width: 75%;
+  margin: 2em auto 1em;
+  text-align: center;
+
+  .social-icons {
+    li {
+      display: inline-block;
+      padding: 5px 3px;
+    }
+
+    a {
+      display: block;
+      font-size: 22px;
+
+      &:hover {
+        color: $grey;
+      }
+    }
+  }
+}

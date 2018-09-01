@@ -4,7 +4,7 @@
 
 $base-font: 'Lato', Arial, sans-serif;
 $base-font-size: 14px;
-$main-font-color: $black;
+$main-font-color: $dark-grey;
 
 html,
 body {
@@ -14,31 +14,24 @@ body {
 }
 
 h1 {
-  font-size: 1.42859rem;
-  font-weight: 500;
-  line-height: 24px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.5em;
 }
 
-
 h2 {
-  font-size: 1.71428rem;
-  font-weight: 300;
-  line-height: 30px;
-  letter-spacing: 1px;
+  font-size: 1.75rem;
+  font-weight: 500;
+  line-height: 1.5em;
 }
 
 h3 {
-  font-size: 1rem;
-  font-weight: 500;
-  line-height: 17px;
-  text-align: center;
-  text-transform: uppercase;
+  font-size: 1.25rem;
+  font-weight: 100;
 }
 
 p {
   font-size: 1rem;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 18px;
 }

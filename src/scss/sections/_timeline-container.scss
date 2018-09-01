@@ -1,0 +1,68 @@
+.timeline-container {
+  position: relative;
+  padding: 2em 10em;
+  background-color: $timeline-bg;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 0.3em;
+    background: $site-blue;
+    content: '';
+  }
+}
+
+.timeline-block {
+  padding: 1em 2em;
+
+  &.minor {
+    .year {
+      font-size: 1.5rem;
+      color: $dark-grey;
+
+      &::before {
+        top: 0.5em;
+        left: -1.54em;
+      }
+    }
+
+    .subject {
+      font-size: 1rem;
+    }
+
+    .details {
+      margin-top: 0;
+    }
+  }
+
+  .year {
+    position: relative;
+    color: $site-blue;
+
+    &::before {
+      position: absolute;
+      top: 0.5em;
+      left: -1.4em;
+      z-index: 6;
+      width: 0.65em;
+      height: 0.65em;
+      background: $site-blue;
+      border-radius: 50%;
+      content: '';
+    }
+  }
+
+  .details {
+    margin-top: 1em;
+
+    .fa {
+      margin-right: 0.25em;
+    }
+  }
+
+  a {
+    color: $link-blue;
+    text-decoration: underline;
+  }
+}
