@@ -1,0 +1,163 @@
+.resume-panel {
+  width: 100%;
+  max-width: 750px;
+  min-height: 900px;
+  margin: 0 auto;
+  color: $dark-grey;
+  background-color: $white;
+  border: 1px solid $paper-white;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3), 0 0 5px rgba(128, 128, 128, 0.1) inset;
+
+  h2,
+  h3 {
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    text-align: inherit;
+    text-transform: none;
+  }
+
+  a {
+    color: $resume-blue;
+    text-decoration: underline;
+  }
+
+  li {
+    line-height: 18px;
+  }
+
+  @media(max-width:767px) {
+    display: block;
+    float: none;
+    width: 90%;
+    height: auto;
+    padding: 0;
+    margin: 10px auto;
+  }
+}
+
+.main-details {
+  padding: 30px 25px 18px;
+  border-bottom: 1px solid $resume-blue;
+  animation-delay: 1s;
+  animation-duration: 1s;
+
+  h2 {
+    padding-bottom: 5px;
+    font-size: 2rem;
+    line-height: 34px;
+    color: $resume-blue;
+  }
+
+  h3 {
+    font-size: 1.25rem;
+    line-height: 24px;
+  }
+
+  .name {
+    float: left;
+
+    p {
+      font-style: italic;
+      letter-spacing: 0.5px;
+      text-align: right;
+    }
+  }
+
+  .resume-contact {
+    float: right;
+
+    ul {
+      margin-top: 5px;
+      font-size: 0.9em;
+      list-style: none;
+    }
+  }
+
+  @media(max-width:767px) {
+    .name,
+    .resume-contact {
+      float: none;
+      width: 100%;
+      text-align: center;
+
+      p {
+        text-align: center;
+      }
+    }
+
+    .resume-contact {
+      li {
+        margin: 0;
+      }
+    }
+  }
+}
+
+.main-content {
+  padding: 0 25px 20px;
+  animation-delay: 1.5s;
+  animation-duration: 1.5s;
+
+  section {
+    padding-top: 15px;
+
+    h3 {
+      font-size: 1.25em;
+    }
+  }
+
+  .section-title {
+    font-style: italic;
+    color: $resume-blue;
+  }
+
+  .section-content {
+    padding-top: 10px;
+
+    p {
+      line-height: 18px;
+    }
+
+    a {
+      color: $resume-blue;
+      text-decoration: underline;
+    }
+
+    .sub-details {
+      h3,
+      p {
+        display: inline-block;
+        width: 49%;
+      }
+
+      p:last-child {
+        font-size: 0.8em;
+        text-align: right;
+      }
+
+      .sub-title {
+        color: $resume-blue;
+      }
+
+      .secondary-title {
+        font-style: italic;
+      }
+    }
+
+    .sub-intro {
+      font-style: italic;
+    }
+
+    .sub-points {
+      padding-left: 50px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    section {
+      h3 {
+        font-size: 1.15em;
+      }
+    }
+  }
+}
