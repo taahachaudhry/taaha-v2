@@ -1,5 +1,7 @@
 global.jQuery = require('jquery');
 var $ = global.jQuery;
+
+require('jquery-bridget')
 require('jquery.easing');
 
 function displayQuote() {
@@ -30,6 +32,15 @@ function displayQuote() {
   $('#author').text(author);
 }
 
+function scrollToSection(button, section) {
+  $(button).click(function() {
+    $('html,body').animate({
+        scrollTop: $(section).offset().top},
+        'slow');
+  });
+}
+
 $(document).ready(function() {
   displayQuote();
+  scrollToSection('#history', '#timeline-container')
 });
