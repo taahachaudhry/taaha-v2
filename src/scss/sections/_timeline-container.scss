@@ -24,10 +24,7 @@
       color: $dark-grey;
 
       &::before {
-        top: 0.5em;
-        left: -2.83em;
-        width: 0.5em;
-        height: 0.5em;
+        left: -3.29em;
       }
     }
 
@@ -38,6 +35,10 @@
     .details {
       margin-top: 0;
     }
+
+    .fa {
+      left: -3.05em;
+    }
   }
 
   .year {
@@ -46,12 +47,12 @@
 
     &::before {
       position: absolute;
-      top: 0.5em;
-      left: -1.41em;
-      z-index: 6;
-      width: 0.7em;
-      height: 0.7em;
-      background: $site-blue;
+      top: 0;
+      left: -1.75em;
+      z-index: 1;
+      width: 1.4em;
+      height: 1.4em;
+      background: $timeline-bg;
       border-radius: 50%;
       content: '';
     }
@@ -59,10 +60,14 @@
 
   .details {
     margin-top: 1em;
+  }
 
-    .fa {
-      margin-right: 0.25em;
-    }
+  .fa {
+    position: absolute;
+    top: 0.2em;
+    left: -1.6em;
+    z-index: 5;
+    color: $site-blue;
   }
 
   a {
