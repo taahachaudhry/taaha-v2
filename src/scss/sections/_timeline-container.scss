@@ -17,13 +17,17 @@
   padding: 1em 2em;
 
   &.minor {
+    padding: 1em 4em;
+
     .year {
       font-size: 1.5rem;
       color: $dark-grey;
 
       &::before {
         top: 0.5em;
-        left: -1.59em;
+        left: -2.83em;
+        width: 0.5em;
+        height: 0.5em;
       }
     }
 
